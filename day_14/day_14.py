@@ -1,10 +1,9 @@
-from os import replace
 import time
 
 from collections import Counter, defaultdict
 from copy import deepcopy
 from math import ceil
-from typing import Dict, List
+from typing import Dict
 
 
 def part_1(template: str, rules: Dict[str, str]) -> int:
@@ -62,6 +61,7 @@ if __name__ == "__main__":
 
     template = input[0]
     rules = {}
+
     for line in input[2:]:
         f, t = line.split(" -> ")
         rules[f] = t
