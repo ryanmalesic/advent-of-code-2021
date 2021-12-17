@@ -30,7 +30,7 @@ def test_velocity(
         ):
             return True
 
-        if pos[1] < y_range[0]:
+        if pos[0] > x_range[1] or pos[1] < y_range[0]:
             return False
 
         pos[0] += velocity[0]
